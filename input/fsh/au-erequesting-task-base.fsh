@@ -33,7 +33,6 @@ Description: "This base profile sets minimum expectations for derived Task resou
 
 * priority MS 
 
-* focus MS
 * focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
 
 * for 1..1 MS
