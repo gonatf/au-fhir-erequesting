@@ -12,7 +12,7 @@ Description: "This profile sets minimum expectations for a Diagnostic Request Ta
   * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task"
 
-* focus 1..1
+* focus 1..1 MS
 * focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
 
 * partOf 1..1
