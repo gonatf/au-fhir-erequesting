@@ -17,22 +17,34 @@ Description: "This base profile sets minimum expectations for derived Task resou
   * tag[eRequestingFulfillmentTask] from AUeRequestingTaskTagFulfillment (required)
     * ^short = "fulfillment-task | fulfillment-task-group"
 
-* groupIdentifier 1..1
+* groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
 * groupIdentifier.type 
   * coding 1..1    
   * coding = $v2-0203#PGN
 
+* status MS
 * status from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-task-status (required)
 
+* statusReason MS
+
+* intent MS
 * intent = #order (exactly)
 
-* for 1..1
+* priority MS 
+
+* focus 1..1 MS
+* focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
+
+* for 1..1 MS
 * for only Reference (AUCorePatient)
 
-* requester 1..1
+* requester 1..1 MS
 * requester only Reference(AUCorePractitionerRole)
 
-* authoredOn 1..1
+* authoredOn 1..1 MS
 
+* lastModified MS
+
+* owner MS
 * owner only Reference(AUCoreOrganization)
