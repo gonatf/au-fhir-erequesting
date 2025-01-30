@@ -31,9 +31,7 @@ Description: "This base profile sets minimum expectations for derived Task resou
 * intent MS
 * intent = #order (exactly)
 
-* priority MS 
-
-* focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
+* priority MS
 
 * for 1..1 MS
 * for only Reference (AUCorePatient)
